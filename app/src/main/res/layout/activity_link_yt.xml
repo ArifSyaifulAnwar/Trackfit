@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:background="#FFF9EF"
+    android:layout_height="match_parent"
+    tools:context=".LinkYT">
+
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="Link Reverensi Youtube" />
+
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_below="@id/textView15"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/plus"
+        />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/link"
+        android:layout_marginTop="20dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@id/imageView14"
+        android:background="@drawable/buttonlengkungsecond">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/linknya"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Masukkan Link"
+            android:textColorHint="@color/black"
+            android:inputType="textUri" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/link1"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@id/link"
+        android:background="@drawable/buttonlengkungsecond">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/linknya1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Masukkan Link"
+            android:textColorHint="@color/black"
+            android:inputType="textUri" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/link2"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@id/link1"
+        android:background="@drawable/buttonlengkungsecond">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/linknya2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Masukkan Link"
+            android:textColorHint="@color/black"
+            android:inputType="textUri" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/link3"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@id/link2"
+        android:background="@drawable/buttonlengkungsecond">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/linknya3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Masukkan Link"
+            android:textColorHint="@color/black"
+            android:inputType="textUri" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="135dp"
+        android:textAllCaps="false"
+        android:background="@drawable/buttonlengkungsecond"
+        android:textSize="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/link3"
+        android:layout_marginTop="90dp"
+        android:textColor="#296D60"
+        android:layout_height="wrap_content"
+        android:text="Simpan" />
+
+
+</RelativeLayout>

@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="#FFF9EF"
+    tools:context=".fragment.Riwayat">
+
+    <LinearLayout
+        android:id="@+id/profile_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama"
+            android:layout_marginRight="20dp"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/fotoProfile"
+            android:layout_width="50dp"
+            android:background="@drawable/buttonlingkarangnobg"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/containerlatian"
+        android:layout_below="@+id/profile_section"
+        android:background="@drawable/warnaprogram"
+        >
+
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:textColor="@color/primary_color"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp"
+            android:text="Banyaknya" />
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:textColor="@color/primary_color"
+            android:textStyle="bold"
+            android:layout_below="@+id/textView16"
+            android:layout_marginLeft="30dp"
+            android:text="Latihan" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/garis"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="250dp"
+            />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="48dp"
+            android:textColor="@color/primary_color"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:text="1" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/containerhasillatian"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/containerlatian"
+        android:background="@drawable/containerukurberat"
+        >
+
+
+        <TextView
+            android:id="@+id/tanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:text="Tanggal" />
+
+        <TextView
+            android:id="@+id/kegiatan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Kegiatan"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/tanggal"/>
+
+        <TextView
+            android:id="@+id/durasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Durasi: "
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/kegiatan"/>
+
+        <TextView
+            android:id="@+id/durasinya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_toEndOf="@id/durasi"
+            android:layout_alignBaseline="@id/durasi"
+            android:text="durasinya" />
+
+        <TextView
+            android:id="@+id/kkal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kkal: "
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="100dp"
+            android:layout_toEndOf="@id/durasinya"
+            android:layout_alignBaseline="@id/durasinya"
+            android:layout_below="@+id/durasinya"/>
+
+        <TextView
+            android:id="@+id/kkalnya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_toEndOf="@id/kkal"
+            android:layout_alignBaseline="@id/kkal"
+            android:text="kkalnya" />
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/garis1"
+            android:layout_below="@+id/kkalnya"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+
+
+        <TextView
+            android:id="@+id/nutrisi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nutrisi"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/imageView17"/>
+
+        <TextView
+            android:id="@+id/kalori"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kalsium: "
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/nutrisi"/>
+
+        <TextView
+            android:id="@+id/kalorinya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_toEndOf="@id/kalori"
+            android:layout_alignBaseline="@id/kalori"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/protein"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Protein: "
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/kalori"/>
+
+        <TextView
+            android:id="@+id/proteinnya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_toEndOf="@id/protein"
+            android:layout_alignBaseline="@id/protein"
+            android:text="proteinnya" />
+
+        <TextView
+            android:id="@+id/vitamin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vitamin: "
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="100dp"
+            android:layout_toEndOf="@id/kalorinya"
+            android:layout_alignBaseline="@id/kalorinya"
+            android:layout_below="@+id/durasinya"/>
+
+        <TextView
+            android:id="@+id/vitaminnya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_toEndOf="@id/vitamin"
+            android:layout_alignBaseline="@id/vitamin"
+            android:text="vitamain" />
+
+        <TextView
+            android:id="@+id/tambahan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tambahan: "
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="70dp"
+            android:layout_toEndOf="@id/proteinnya"
+            android:layout_alignBaseline="@id/proteinnya"
+            android:layout_below="@+id/vitamin"/>
+
+        <TextView
+            android:id="@+id/tambahannya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_toEndOf="@id/tambahan"
+            android:layout_alignBaseline="@id/tambahan"
+            android:text="tambaha" />
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/garis1"
+            android:layout_below="@+id/proteinnya"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+
+
+
+        <TextView
+            android:id="@+id/pelacaktidur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pelacak tidur"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/imageView18"/>
+
+        <TextView
+            android:id="@+id/tidur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tidur: "
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/pelacaktidur"/>
+
+        <TextView
+            android:id="@+id/waktutidur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_toEndOf="@id/tidur"
+            android:layout_alignBaseline="@id/tidur"
+            android:text="tidur" />
+
+        <TextView
+            android:id="@+id/bangun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bangun: "
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="100dp"
+            android:layout_toEndOf="@id/waktutidur"
+            android:layout_alignBaseline="@id/waktutidur"
+            android:layout_below="@+id/durasinya"/>
+
+        <TextView
+            android:id="@+id/waktubangun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_toEndOf="@id/bangun"
+            android:layout_alignBaseline="@id/bangun"
+            android:text="bangun" />
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="43dp"
+            android:layout_height="39dp"
+            android:layout_below="@+id/waktubangun"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/trash" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/containerbb"
+        android:layout_width="match_parent"
+        android:layout_height="196dp"
+        android:layout_below="@+id/containerhasillatian"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/buttonlengkungsecond"
+        tools:ignore="ExtraText">
+        <TextView
+            android:id="@+id/tanggalnya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:text="Tanggal" />
+
+
+        <TextView
+            android:id="@+id/berat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Berat: "
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/tanggalnya"/>
+
+        <TextView
+            android:id="@+id/beratnya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_toEndOf="@id/berat"
+            android:layout_alignBaseline="@id/berat"
+            android:text="beratnya" />
+
+        <TextView
+            android:id="@+id/tinggi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tinggi: "
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="100dp"
+            android:layout_toEndOf="@id/beratnya"
+            android:layout_alignBaseline="@id/beratnya"
+            android:layout_below="@+id/beratnya"/>
+
+        <TextView
+            android:id="@+id/tingibadan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_toEndOf="@id/tinggi"
+            android:layout_alignBaseline="@id/tinggi"
+            android:text="bangun" />
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/garisputih"
+            android:layout_below="@id/tingibadan"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+
+            />
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="283dp"
+            android:layout_height="90dp"
+            android:layout_below="@id/imageView20"
+            android:layout_marginTop="-1dp"
+            tools:src="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imageView22"
+            android:layout_width="51dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/imageView21"
+            android:layout_alignBaseline="@id/imageView21"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="-53dp"
+            android:layout_toEndOf="@id/imageView21"
+            android:src="@drawable/trashwhitr" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/share"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/containerbb"
+        android:background="@drawable/warnaprogram"
+        android:textColor="@color/primary_color"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Share"
+        android:layout_alignParentRight="true"
+        android:onClick="shareData"
+        />
+
+
+</RelativeLayout>

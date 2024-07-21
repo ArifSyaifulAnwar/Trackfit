@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFF9EF"
+    tools:context=".BeratTinggi">
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="Berat dan Tinggi" />
+
+    <TextView
+        android:id="@+id/tanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tanggal"
+        android:layout_below="@id/textView15"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/tanggal"
+        android:text="Berat" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/kegiatan"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_below="@id/textView2"
+        android:background="@drawable/buttonlengkungsecond">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/namakegiatan"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Masukkan Berat Badan"
+            android:textColorHint="@color/black"
+            android:inputType="number" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KG"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_alignBottom="@id/kegiatan"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+
+        android:layout_below="@id/kegiatan"
+        android:text="Tinggi" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/durasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+
+        android:layout_below="@id/textView1"
+        android:background="@drawable/buttonlengkungsecond">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/durasilatihan"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Masukkan Tinggi Badan"
+            android:textColorHint="@color/black"
+            android:inputType="number"
+            android:imeOptions="actionDone" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CM"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_alignBottom="@id/durasi"
+        android:layout_alignParentRight="true"/>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="166dp"
+        android:id="@+id/camera"
+        android:layout_below="@+id/durasi"
+        android:background="@drawable/buttonlengkungsecond"
+        android:layout_marginTop="20dp">
+
+        <!-- Gambar Kamera -->
+        <ImageView
+            android:id="@+id/cameranya"
+            android:layout_width="62dp"
+            android:layout_height="38dp"
+            android:src="@drawable/camera"
+            android:layout_centerVertical="true"
+            />
+
+        <!-- Hasil Kamera -->
+        <ImageView
+            android:id="@+id/hasilcamera"
+            android:layout_width="283dp"
+            android:layout_height="112dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/cameranya"
+            tools:src="@tools:sample/avatars" />
+
+        <!-- Tombol Refresh -->
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="66dp"
+            android:layout_height="53dp"
+            android:layout_below="@id/hasilcamera"
+            android:layout_marginStart="-61dp"
+            android:layout_marginTop="-37dp"
+            android:layout_toEndOf="@id/hasilcamera"
+            android:src="@drawable/refresh" />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="135dp"
+        android:textAllCaps="false"
+        android:background="@drawable/buttonlengkungsecond"
+        android:textSize="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/camera"
+        android:layout_marginTop="60dp"
+        android:textColor="#296D60"
+        android:layout_height="wrap_content"
+        android:text="Simpan" />
+
+
+
+</RelativeLayout>

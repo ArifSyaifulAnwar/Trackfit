@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFF9EF"
+    tools:context=".Nutrisi">
+
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="Nutrisi" />
+
+    <TextView
+        android:id="@+id/tanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tanggal"
+        android:layout_below="@id/textView15"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/tanggal"
+        android:text="Kalsium" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/kegiatan"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@id/textView2"
+        android:background="@drawable/buttonlengkungsecond">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/namakegiatan"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Masukkan Kalsium"
+            android:textColorHint="@color/black"
+            android:inputType="textPersonName" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/kegiatan"
+        android:text="Protein" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/durasi"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@id/textView1"
+        android:background="@drawable/buttonlengkungsecond">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/durasilatihan"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Masukkan Protein"
+            android:textColorHint="@color/black"
+            android:inputType="textPersonName" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/durasi"
+        android:text="Vitamin" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/kakal"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@id/textView3"
+        android:background="@drawable/buttonlengkungsecond">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/kkal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Masukkan Vitamin"
+            android:textColorHint="@color/black"
+            android:inputType="textPersonName" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/kakal"
+        android:text="tambahan" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tambahann"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@id/textView5"
+        android:background="@drawable/buttonlengkungsecond">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tambahannya"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Masukkan Tambahan"
+            android:textColorHint="@color/black"
+            android:inputType="textPersonName" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="135dp"
+        android:textAllCaps="false"
+        android:background="@drawable/buttonlengkungsecond"
+        android:textSize="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/textView5"
+        android:layout_marginTop="90dp"
+        android:textColor="#296D60"
+        android:layout_height="wrap_content"
+        android:text="Simpan" />
+</RelativeLayout>

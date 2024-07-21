@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "509693469668",
+    "project_id": "trackfit-56074",
+    "storage_bucket": "trackfit-56074.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:509693469668:android:a788393e9e1d37c1a3ddf1",
+        "android_client_info": {
+          "package_name": "com.example.trackfit"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDK6wgdHisCf-LJMMne5hmUGYVWRYvlZgs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,304 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF9EF"
+    tools:context=".fragment.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="16dp"
+        android:layout_height="wrap_content">
+
+        <!-- Profile Section -->
+        <LinearLayout
+            android:id="@+id/profile_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama"
+                android:layout_marginRight="20dp"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000" />
+
+            <ImageView
+                android:id="@+id/fotoProfile"
+                android:layout_width="50dp"
+                android:background="@drawable/buttonlingkarangnobg"
+                android:layout_height="50dp"
+                android:layout_marginEnd="8dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Program"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="24sp"
+            android:textColor="@color/primary_color"
+            android:textStyle="bold"
+            android:layout_below="@+id/profile_section"
+            android:layout_marginTop="16dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/calender"
+            android:layout_below="@id/textView8"
+            android:background="@drawable/calenderkontainer"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textViewTarget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Target Mingguan"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary_color"
+                android:layout_centerHorizontal="true"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                android:layout_below="@+id/textViewTarget">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <GridView
+                        android:id="@+id/gridViewCalendar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:numColumns="7"
+                        android:horizontalSpacing="1dp"
+                        android:verticalSpacing="1dp"
+                        android:stretchMode="columnWidth"/>
+
+                </LinearLayout>
+            </ScrollView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="127dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/calender"
+            android:background="@drawable/warnaprogram"
+            android:id="@+id/containerprogram">
+
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/program" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imageView5"
+                android:layout_marginLeft="10dp"
+                android:textSize="30dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/primary_color"
+                android:text="Program Latihan Saya" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView9"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/plus" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/containergabungan"
+            android:layout_below="@+id/containerprogram">
+
+            <RelativeLayout
+                android:layout_width="170dp"
+                android:layout_height="145dp"
+                android:id="@+id/containernutrisi"
+                android:background="@drawable/buttonlengkungsecond"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp">
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:src="@drawable/nutrisi"
+                android:layout_marginTop="-30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="-20dp"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitCenter"/>
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nutrisi"
+                android:textSize="24dp"
+                android:textStyle="bold"
+
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="120dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="170dp"
+                android:layout_height="145dp"
+                android:id="@+id/containerpelacak"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/buttonlengkungsecond"
+                android:layout_toRightOf="@+id/containernutrisi"
+                >
+            </RelativeLayout>
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:src="@drawable/pelacaktidur"
+                android:layout_marginTop="-10dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitCenter"/>
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pelacak Tidur"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="135dp"
+                />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="110dp"
+                android:layout_marginRight="40dp"
+                android:src="@drawable/plusputih" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_below="@+id/containergabungan"
+            android:id="@+id/containerukurberat"
+            android:background="@drawable/containerukurberat"
+            >
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="24dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Ukur Berat" />
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_below="@+id/textView12"
+                android:textSize="24dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="dan Tinggi" />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_height="30dp"
+                android:src="@drawable/plus" />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="130dp"
+                android:layout_height="150dp"
+                android:layout_marginRight="20dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/gambarukurberat"
+                android:layout_alignParentRight="true"
+
+
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/containerreverensi"
+            android:layout_below="@+id/containerukurberat"
+            android:background="@drawable/containerreverensi"
+            android:layout_marginTop="20dp"
+            android:clipToPadding="false"
+            android:clipChildren="false">
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:src="@drawable/reverensi"
+                />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:text="Reverensi" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</ScrollView>
